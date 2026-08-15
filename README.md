@@ -36,6 +36,10 @@ RailsなどのWebフレームワークは使用せず、Rubyと標準的なラ�
 
 ### Runtime
 
+アプリケーションの実行環境はDockerコンテナ上に構築する。
+
+* Docker
+* Docker Compose
 * Ruby
 * Ruby標準ライブラリ
 
@@ -234,8 +238,11 @@ user_app/
 ├── config/
 │   └── dependencies.rb
 │
-├── main.rb
+├── Dockerfile
+├── compose.yaml
 ├── Gemfile
+├── Gemfile.lock
+├── main.rb
 └── README.md
 ```
 
